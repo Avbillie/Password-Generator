@@ -65,7 +65,7 @@ function generatePassword() {
       alert("Please enter a numberValues between 8-128.");
       console.log("Please enter either yes or no.");
       var passwordLengthChoice = prompt("Length of password (8-128 characters)?");
-      console.log(passwordLengthChoice);
+      console.log(passwordLength);
     }
   }
 
