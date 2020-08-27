@@ -25,7 +25,6 @@ function generatePassword() {
 
   // Convert passwordLengthChoice to an integer
   var passwordLength = parseInt(passwordLengthChoice, 10);
-  console.log("Password Length")
   console.log(passwordLength)
 
   // If passwordLength is greater >= 8 and <= 128 show alert message
