@@ -51,7 +51,7 @@ function generatePassword() {
 
     // If passwordLength is greater >= 8 and <= 128 and is a number(integer) show alert message
     if (passwordLength >= 8 && passwordLength <= 128 && isNaN(passwordLength) == false) {
-      alert("Your password will be " + passwordLengthChoice + " characters long.")
+      alert("Your password will be " + passwordLengthChoice + " characters long.");
     }
 
     // If passwordLength is not a number(integer) show alert message and re-ask user their desired password length
@@ -62,8 +62,10 @@ function generatePassword() {
 
     //  If passwordLength < 8 or passwordLength > 128 show alert message and re-ask user their desired password length
     if (passwordLength < 8 || passwordLength > 128) {
-      alert("Please enter a numberValues between 8-128.")
+      alert("Please enter a numberValues between 8-128.");
+      console.log("Please enter either yes or no.");
       var passwordLengthChoice = prompt("Length of password (8-128 characters)?");
+      console.log(passwordLengthChoice);
     }
   }
 
@@ -110,8 +112,10 @@ function generatePassword() {
     }
     // If validate is equal to false then show alert message and re-ask user if they want to include special characters in password
     if (validate == false) {
-      alert("Please enter either yes or no.")
+      alert("Please enter either yes or no.");
+      console.log("Please enter either yes or no.");
       var specialCharChoice = prompt("Include special characters (~,`,!,@,#,$,%,^,&,*,-,_,=,+?)?").toUpperCase();
+      console.log(specialCharChoice);
     }
   }
 
@@ -161,7 +165,9 @@ function generatePassword() {
     // If validate is equal to false show alert message and re-ask user if they want to include numbers in password
     if (validate == false) {
       alert("Please enter either yes or no.")
+      console.log("Please enter either yes or no.")
       var numberValuesCharChoice = prompt("Include numeric chracters (0,1,2,3,4,5,6,7,8,9)?").toUpperCase();
+      console.log(numberValuesCharChoice)
     }
   }
 
@@ -212,7 +218,9 @@ function generatePassword() {
     // If validate is equal to false show alert message and re-ask user if they want to include upper case characters in password
     if (validate == false) {
       alert("Please enter either yes or no.")
+      console.log("Please enter either yes or no.")
       var uCaseCharChoice = prompt("Include upper case characters?").toUpperCase();
+      console.log(uCaseCharChoice)
     }
   }
 
@@ -261,7 +269,9 @@ function generatePassword() {
     // If validate is equal to false show alert message and re-ask user if they want to include lower case characters in password
     if (validate == false) {
       alert("Please enter either yes or no.")
+      console.log("Please enter either yes or no.")
       var lCaseCharChoice = prompt("Include lower case characters?").toUpperCase();
+      console.log(lCaseCharChoice)
     }
   }
 
