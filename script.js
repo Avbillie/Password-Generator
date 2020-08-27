@@ -52,20 +52,21 @@ function generatePassword() {
     // If passwordLength is greater >= 8 and <= 128 and is a number(integer) show alert message
     if (passwordLength >= 8 && passwordLength <= 128 && isNaN(passwordLength) == false) {
       alert("Your password will be " + passwordLengthChoice + " characters long.");
+      console.log(passwordLength);
     }
 
     // If passwordLength is not a number(integer) show alert message and re-ask user their desired password length
     if (isNaN(passwordLength) == true) {
       alert("Invalid character, please enter a numberValues between 8-128.")
+      console.log("Invalid character, please enter a numberValues between 8-128.")
       var passwordLengthChoice = prompt("Length of password (8-128 characters)?");
     }
 
     //  If passwordLength < 8 or passwordLength > 128 show alert message and re-ask user their desired password length
     if (passwordLength < 8 || passwordLength > 128) {
       alert("Please enter a numberValues between 8-128.");
-      console.log("Please enter either yes or no.");
+      console.log("Please enter a numberValues between 8-128..");
       var passwordLengthChoice = prompt("Length of password (8-128 characters)?");
-      console.log(passwordLength);
     }
   }
 
