@@ -20,7 +20,7 @@ let password = "";
 function generatePassword() {
 
   // Ask user their desired password length
-  var passwordLengthChoice = prompt("Length of password (8-128 characters)?");
+  var passwordLengthChoice = prompt("Choose your desired length of password between 8-128 characters?");
 
   // Convert passwordLengthChoice to an integer
   var passwordLength = parseInt(passwordLengthChoice, 10);
@@ -42,7 +42,7 @@ function generatePassword() {
 
     alert("Please enter a number value between 8-128.");
     console.log("Please enter a number value.");
-    var passwordLengthChoice = prompt("Length of password (8-128 characters)?");
+    var passwordLengthChoice = prompt("Choose your desired length of password between 8-128 characters?");
     console.log("Length of password?")
     var passwordLength = parseInt(passwordLengthChoice, 10);
     console.log(passwordLength)
@@ -60,14 +60,14 @@ function generatePassword() {
     // If passwordLength is not a number(integer) show alert message and re-ask user their desired password length
     if (isNaN(passwordLength) == true) {
       alert("Invalid character, please enter a numberValues between 8-128.")
-      var passwordLengthChoice = prompt("Length of password (8-128 characters)?");
+      var passwordLengthChoice = prompt("Choose your desired length of password between 8-128 characters?");
     }
   }
 
   //  --------------------------------------------------------------------------------------------------------------------------------------------
 
   // Ask user if they want to include special characters in password
-  var specialCharChoice = prompt("Include special characters (~,`,!,@,#,$,%,^,&,*,-,_,=,+?)?").toUpperCase();
+  var specialCharChoice = prompt("Do you want to include special characters(~,`,!,@,#,$,%,^,&,*,-,_,=,+?)?").toUpperCase();
   console.log("Include special Character?")
   console.log(specialCharChoice);
 
@@ -98,7 +98,7 @@ function generatePassword() {
 
     alert("Please enter either yes or no.");
     console.log("Please enter either yes or no.");
-    var specialCharChoice = prompt("Include special characters (~,`,!,@,#,$,%,^,&,*,-,_,=,+?)?").toUpperCase();
+    var specialCharChoice = prompt("Do you want to include special characters(~,`,!,@,#,$,%,^,&,*,-,_,=,+?)?").toUpperCase();
     console.log("Include special characters?")
     console.log(specialCharChoice);
 
@@ -122,7 +122,7 @@ function generatePassword() {
   //  --------------------------------------------------------------------------------------------------------------------------------------------
 
   // Ask user if they want to include numbers in password
-  var numberValuesCharChoice = prompt("Include numeric chracters (0,1,2,3,4,5,6,7,8,9)?").toUpperCase();
+  var numberValuesCharChoice = prompt("Do you want to include numeric chracters (0,1,2,3,4,5,6,7,8,9)?").toUpperCase();
   console.log("Include numeric Character?")
   console.log(numberValuesCharChoice);
 
@@ -154,7 +154,7 @@ function generatePassword() {
 
     alert("Please enter either yes or no.")
     console.log("Please enter either yes or no.")
-    var numberValuesCharChoice = prompt("Include numeric chracters (0,1,2,3,4,5,6,7,8,9)?").toUpperCase();
+    var numberValuesCharChoice = prompt("Do you want to include numeric chracters (0,1,2,3,4,5,6,7,8,9)?").toUpperCase();
     console.log("Include numeric chracters?")
     console.log(numberValuesCharChoice)
 
@@ -178,7 +178,7 @@ function generatePassword() {
   //  --------------------------------------------------------------------------------------------------------------------------------------------
 
   // Ask user if they want to include upper case characters in password
-  var uCaseCharChoice = prompt("Include upper case characters?").toUpperCase();
+  var uCaseCharChoice = prompt("Do you want to include upper case characters?").toUpperCase();
   console.log("Include upper case characters?")
   console.log(uCaseCharChoice);
 
@@ -210,7 +210,7 @@ function generatePassword() {
 
     alert("Please enter either yes or no.")
     console.log("Please enter either yes or no.")
-    var uCaseCharChoice = prompt("Include upper case characters?").toUpperCase();
+    var uCaseCharChoice = prompt("Do you want to include upper case characters?").toUpperCase();
     console.log("Include upper case characters?")
     console.log(uCaseCharChoice)
 
@@ -234,7 +234,7 @@ function generatePassword() {
   //  --------------------------------------------------------------------------------------------------------------------------------------------
 
   // Ask user if they want to include lower case characters in password
-  var lCaseCharChoice = prompt("Include lower case characters?").toUpperCase();
+  var lCaseCharChoice = prompt("Do you want to include lower case characters?").toUpperCase();
   console.log("Include lower case characters?")
   console.log(lCaseCharChoice);
 
@@ -265,7 +265,7 @@ function generatePassword() {
 
     alert("Please enter either yes or no.")
     console.log("Please enter either yes or no.")
-    var lCaseCharChoice = prompt("Include lower case characters?").toUpperCase();
+    var lCaseCharChoice = prompt("Do you want to include lower case characters?").toUpperCase();
     console.log(lCaseCharChoice)
 
     // If lCaseCharChoice prompt cancel button is hit then exit program
