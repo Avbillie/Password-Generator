@@ -23,7 +23,7 @@ function generatePassword() {
   var passwordLengthChoice = prompt("Choose your desired length of password between 8-128 characters?");
 
   // Convert passwordLengthChoice to an integer
-  var passwordLength = parseInt(passwordLengthChoice, 10);
+  // var passwordLength = parseInt(passwordLengthChoice, 10);
   console.log("Length of password?")
   console.log(passwordLength)
 
